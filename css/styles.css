@@ -28,8 +28,7 @@ body {
 }
 
 .viewport {
-    height: 100vh;
-    height: 100dvh;
+    height: 100svh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -71,8 +70,9 @@ img {
 
 .projects-image {
     position: absolute;
-    left: 5%;
+    left: 50%;
     bottom: 10%;
+    transform: translateX(-50%);
     width: 65vw;
     height: 65vh;
     height: 65dvh;
@@ -87,8 +87,9 @@ img {
 .viewport:not(.viewport-1)::before {
     content: '';
     position: absolute;
-    left: 5%;
+    left: 50%;
     top: 0;
+    transform: translateX(-50%);
     width: 65vw;
     height: 100%;
     background-color: var(--color-strip-background);
@@ -118,9 +119,16 @@ img {
         font-size: clamp(15.84px, 1.98vw, 21.12px);
     }
 
+    .viewport:not(.viewport-1)::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 58.5vw;
+    }
+
     .projects-image {
-        left: 5%;
+        left: 50%;
         bottom: 10%;
+        transform: translateX(-50%);
         width: 58.5vw;
         height: 58.5vh;
         height: 58.5dvh;
@@ -128,9 +136,9 @@ img {
     }
 
     .projects-list {
-        left: 27.4%;
+        left: 35.4%;
         top: 20%;
-        font-size: clamp(39.744px, 9.344808vw, 93.44808px);
+        font-size: clamp(47.6928px, 11.21377vw, 112.1376px);
     }
 }
 
@@ -139,17 +147,24 @@ img {
         font-size: clamp(15.84px, 1.98vw, 21.12px);
     }
 
+    .viewport:not(.viewport-1)::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(58.5vw, 90vw);
+    }
+
     .projects-image {
-        left: 5%;
+        left: 50%;
         bottom: 10%;
+        transform: translateX(-50%);
         width: min(58.5vw, 90vw);
         height: 58.5vh;
         height: 58.5dvh;
     }
 
     .projects-list {
-        left: 27.4%;
-        top: 20%;
-        font-size: clamp(29.808px, 6.624vw, 66.24px);
+        left: 38.4%;
+        top: 23%;
+        font-size: clamp(35.7696px, 7.9488vw, 79.488px);
     }
 }
