@@ -1,0 +1,12 @@
+:root {
+    --color-winery: #7E2630;
+    --color-captains-blue: #53687E;
+    --color-buttercream: #EFE6D8;
+    --color-pms-2307: #6F7F1A;
+    
+    --color-text: var(--color-winery);
+    --color-text-stroke: var(--color-winery);
+    --color-background: var(--color-captains-blue);
+    --color-image-background: var(--color-pms-2307);
+    --color-strip-background: var(--color-buttercream);
+}
